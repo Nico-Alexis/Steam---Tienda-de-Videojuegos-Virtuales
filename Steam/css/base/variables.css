@@ -1,0 +1,56 @@
+/*================== VARIABLES ==================*/
+
+:root{
+    /*Background*/
+    --color-background: #0f1924; 
+    --color-background-secondary: #171d25;
+    --color-box: #2A475E;
+    --color-box-light: #3A5F7D;
+    --color-box-alt: #5c7e10;
+    --color-box-alt-hover: #678f10;
+
+    /*Primary Colors*/
+    --color-primary: #1A9FFF;
+    --color-primary-hover: #66C0F4;
+    --color-primary-dark: #1B75BB;
+
+    /*Color Text*/
+    --color-text: #FFFFFF; /*Titles Text*/
+    --color-text-secondary: #C7D5E0; /*Primary Text*/
+    --color-text-muted: #8F98A0; /*Secondary Text*/
+
+    /*Edges*/
+    --color-border: #3D4F5F;
+    --color-border-light: #66C0F4;
+
+    /*States*/
+    --color-success: #5BA32B;
+    --color-warning: #E5A100;
+    --color-danger: #D94141;
+
+    /*Other Features*/
+    --color-overlay: #000000;
+
+    /*Spacing*/
+    --spacing-small: 8px;
+    --spacing-medium: 16px;
+    --spacing-large: 24px;
+    --spacing-xl: 32px;
+    --spacing-xxl: 48px;
+
+    /*Fonts*/
+    --font-family: "Roboto", Arial, sans-serif;
+    --font-size-base: 16px;
+    --font-size-large: 20px;
+    --font-size-xl: 2rem;
+    --font-size-xxl: 3.5rem;
+
+    /*Box Shadows*/
+    --shadow-small: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --shadow-medium: 0 4px 8px rgba(0, 0, 0, 0.15);
+    --shadow-hover: 0 8px 24px rgba(0, 0, 0, 0.25);
+
+    /*Transitions*/
+    --transition-fast: 0.2s ease;
+    --transition-medium: 0.3s ease;
+}

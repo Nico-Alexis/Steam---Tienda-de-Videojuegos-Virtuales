@@ -1,0 +1,6 @@
+/*================== BASE ==================*/
+@import url(base/reset.css);
+@import url(base/variables.css);
+
+/*=============== COMPONENTS ===============*/
+@import url(components/header.css);
