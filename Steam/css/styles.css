@@ -4,3 +4,60 @@
 
 /*=============== COMPONENTS ===============*/
 @import url(components/header.css);
+
+
+
+
+/*================== ESTILOS DEL CATÁLOGO (JS) ==================*/ /* I */
+.store-catalog {
+    padding: var(--spacing-xxl) 150px;
+}
+
+#store-title {
+    color: var(--color-text);
+    margin-bottom: var(--spacing-small);
+}
+
+.store-catalog__description {
+    margin-bottom: var(--spacing-xl);
+}
+
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: var(--spacing-large);
+}
+
+.game-card {
+    background-color: var(--color-background-secondary);
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: var(--shadow-small);
+    transition: transform var(--transition-medium), box-shadow var(--transition-medium);
+}
+
+.game-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+}
+
+.game-card__image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.game-card__content {
+    padding: var(--spacing-medium);
+}
+
+.game-card__title {
+    color: var(--color-text);
+    font-size: var(--font-size-base);
+    margin-bottom: var(--spacing-small);
+}
+
+.game-card__price {
+    color: var(--color-text-secondary);
+    font-weight: bold;
+}
