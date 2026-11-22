@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tienda | Steam</title>
+
+    <meta name="description" content="Explora nuestro catálogo de videojuegos, descubre ofertas y encuentra tus próximos juegos favoritos.">
+    <meta name="author" content="Steam">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:title" content="Tienda | Steam">
+    <meta property="og:description" content="Descubre videojuegos y ofertas en nuestra tienda.">
+    <meta property="og:type" content="website">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="header">
+        <div class="header__container">
+
+            <a href="../index.html" class="header__logo">
+                <img src="https://cdn.cloudflare.steamstatic.com/store/about/logo_steam.svg" alt="Steam">
+            </a>
+
+            <nav class="header__nav">
+                <ul class="header__menu">
+                    <li><a href="../index.html" class="header__link">Inicio</a></li>
+                    <li><a href="store.html" class="header__link header__link--active">Tienda</a></li>
+                    <li><a href="community.html" class="header__link">Comunidad</a></li>
+                </ul>
+            </nav>
+
+            <div class="header__actions">
+
+                <a href="cart.html" class="header__cart">
+                    Carrito
+                </a>
+
+                <div class="header__account">
+                    <a href="login.html" class="header__account-link">Iniciar sesión</a>
+                    <a href="register.html" class="header__account-link">Registrarse</a>
+                </div>
+
+                <div class="header__profile" hidden>
+                    <img src="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/ee/eea4b4e6a6f9a4b4f7f4f4f4f4f4f4f4f4f4f4f4.jpg" alt="Avatar del usuario" class="header__avatar">
+                    <span class="header__username">Usuario</span>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN -->
+
+    <main class="store">
+        <div class="store__container">
+
+            <!-- STORE HEADER -->
+
+            <section class="store__header">
+                <h1 class="store__title">Tienda</h1>
+                <p class="store__description">
+                    Descubre nuevos videojuegos y encuentra tu próxima aventura.
+                </p>
+            </section>
+
+            <!-- STORE SEARCH -->
+
+            <form class="store__search" role="search">
+                <input
+                    type="search"
+                    class="store__search-input"
+                    id="store-search"
+                    name="search"
+                    placeholder="Buscar videojuegos..."
+                    aria-label="Buscar videojuegos"
+                >
+
+                <button type="submit" class="store__search-button">
+                    Buscar
+                </button>
+            </form>
+
+            <!-- STORE CATEGORIES -->
+
+            <nav class="store__categories" aria-label="Categorías de videojuegos">
+                <a href="#" class="store__category store__category--active">Todos</a>
+                <a href="#" class="store__category">Acción</a>
+                <a href="#" class="store__category">Aventura</a>
+                <a href="#" class="store__category">RPG</a>
+                <a href="#" class="store__category">Estrategia</a>
+                <a href="#" class="store__category">Deportes</a>
+                <a href="#" class="store__category">Indie</a>
+            </nav>
+
+            <!-- STORE CONTENT -->
+
+            <div class="store__content">
+
+                <!-- STORE SIDEBAR -->
+
+                <aside class="store__sidebar">
+
+                    <section class="store__filter">
+                        <h2 class="store__filter-title">Precio</h2>
+
+                        <div class="store__filter-list">
+                            <label class="store__filter-item">
+                                <input type="checkbox" name="price" value="free">
+                                Gratis
+                            </label>
+
+                            <label class="store__filter-item">
+                                <input type="checkbox" name="price" value="under10">
+                                Menos de $10
+                            </label>
+
+                            <label class="store__filter-item">
+                                <input type="checkbox" name="price" value="under30">
+                                Menos de $30
+                            </label>
+
+                            <label class="store__filter-item">
+                                <input type="checkbox" name="price" value="under60">
+                                Menos de $60
+                            </label>
+                        </div>
+                    </section>
+
+                    <section class="store__filter">
+                        <h2 class="store__filter-title">Tipo de juego</h2>
+
+                        <div class="store__filter-list">
+                            <label class="store__filter-item">
+                                <input type="checkbox" name="type" value="singleplayer">
+                                Un jugador
+                            </label>
+
+                            <label class="store__filter-item">
+                                <input type="checkbox" name="type" value="multiplayer">
+                                Multijugador
+                            </label>
+
+                            <label class="store__filter-item">
+                                <input type="checkbox" name="type" value="online">
+                                En línea
+                            </label>
+                        </div>
+                    </section>
+
+                    <section class="store__filter">
+                        <h2 class="store__filter-title">Características</h2>
+
+                        <div class="store__filter-list">
+                            <label class="store__filter-item">
+                                <input type="checkbox" name="features" value="controller">
+                                Compatible con mando
+                            </label>
+
+                            <label class="store__filter-item">
+                                <input type="checkbox" name="features" value="achievements">
+                                Logros
+                            </label>
+
+                            <label class="store__filter-item">
+                                <input type="checkbox" name="features" value="cloud">
+                                Guardado en la nube
+                            </label>
+                        </div>
+                    </section>
+
+                </aside>
+
+                <!-- STORE CATALOG -->
+
+                <section class="store__catalog">
+
+                    <div class="store__catalog-header">
+                        <h2 class="store__catalog-title">Todos los videojuegos</h2>
+
+                        <select class="store__sort" name="sort" aria-label="Ordenar videojuegos">
+                            <option value="popular">Más populares</option>
+                            <option value="price-low">Precio: menor a mayor</option>
+                            <option value="price-high">Precio: mayor a menor</option>
+                            <option value="name">Nombre</option>
+                            <option value="newest">Más recientes</option>
+                        </select>
+                    </div>
+
+                    <!-- GAME GRID -->
+
+                    <div class="store__grid">
+
+                        <!-- GAME 1 -->
+
+                        <article class="game-card">
+                            <div class="game-card__image-container">
+                                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1091500/header.jpg" alt="Cyberpunk 2077" class="game-card__image">
+                                <span class="game-card__badge">Más vendido</span>
+                            </div>
+
+                            <div class="game-card__content">
+                                <h3 class="game-card__title">Cyberpunk 2077</h3>
+                                <p class="game-card__description">Explora Night City en una aventura de mundo abierto.</p>
+
+                                <div class="game-card__tags">
+                                    <span class="game-card__tag">RPG</span>
+                                    <span class="game-card__tag">Acción</span>
+                                </div>
+
+                                <div class="game-card__footer">
+                                    <span class="game-card__price">$59.99</span>
+                                    <button type="button" class="game-card__button">Ver juego</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- GAME 2 -->
+
+                        <article class="game-card">
+                            <div class="game-card__image-container">
+                                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1245620/header.jpg" alt="Elden Ring" class="game-card__image">
+                            </div>
+
+                            <div class="game-card__content">
+                                <h3 class="game-card__title">Elden Ring</h3>
+                                <p class="game-card__description">Descubre un vasto mundo de fantasía y desafíos.</p>
+
+                                <div class="game-card__tags">
+                                    <span class="game-card__tag">RPG</span>
+                                    <span class="game-card__tag">Aventura</span>
+                                </div>
+
+                                <div class="game-card__footer">
+                                    <span class="game-card__price">$59.99</span>
+                                    <button type="button" class="game-card__button">Ver juego</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- GAME 3 -->
+
+                        <article class="game-card">
+                            <div class="game-card__image-container">
+                                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1174180/header.jpg" alt="Red Dead Redemption 2" class="game-card__image">
+                            </div>
+
+                            <div class="game-card__content">
+                                <h3 class="game-card__title">Red Dead Redemption 2</h3>
+                                <p class="game-card__description">Vive una historia ambientada en el viejo oeste.</p>
+
+                                <div class="game-card__tags">
+                                    <span class="game-card__tag">Acción</span>
+                                    <span class="game-card__tag">Aventura</span>
+                                </div>
+
+                                <div class="game-card__footer">
+                                    <span class="game-card__price">$59.99</span>
+                                    <button type="button" class="game-card__button">Ver juego</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- GAME 4 -->
+
+                        <article class="game-card">
+                            <div class="game-card__image-container">
+                                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1086940/header.jpg" alt="Baldur's Gate 3" class="game-card__image">
+                            </div>
+
+                            <div class="game-card__content">
+                                <h3 class="game-card__title">Baldur's Gate 3</h3>
+                                <p class="game-card__description">Construye tu propia aventura en un mundo fantástico.</p>
+
+                                <div class="game-card__tags">
+                                    <span class="game-card__tag">RPG</span>
+                                    <span class="game-card__tag">Estrategia</span>
+                                </div>
+
+                                <div class="game-card__footer">
+                                    <span class="game-card__price">$59.99</span>
+                                    <button type="button" class="game-card__button">Ver juego</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- GAME 5 -->
+
+                        <article class="game-card">
+                            <div class="game-card__image-container">
+                                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/413150/header.jpg" alt="Stardew Valley" class="game-card__image">
+                            </div>
+
+                            <div class="game-card__content">
+                                <h3 class="game-card__title">Stardew Valley</h3>
+                                <p class="game-card__description">Construye y administra tu propia granja.</p>
+
+                                <div class="game-card__tags">
+                                    <span class="game-card__tag">Indie</span>
+                                    <span class="game-card__tag">Simulación</span>
+                                </div>
+
+                                <div class="game-card__footer">
+                                    <span class="game-card__price">$14.99</span>
+                                    <button type="button" class="game-card__button">Ver juego</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- GAME 6 -->
+
+                        <article class="game-card">
+                            <div class="game-card__image-container">
+                                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/367520/header.jpg" alt="Hollow Knight" class="game-card__image">
+                            </div>
+
+                            <div class="game-card__content">
+                                <h3 class="game-card__title">Hollow Knight</h3>
+                                <p class="game-card__description">Explora un misterioso reino subterráneo.</p>
+
+                                <div class="game-card__tags">
+                                    <span class="game-card__tag">Indie</span>
+                                    <span class="game-card__tag">Aventura</span>
+                                </div>
+
+                                <div class="game-card__footer">
+                                    <span class="game-card__price">$14.99</span>
+                                    <button type="button" class="game-card__button">Ver juego</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- GAME 7 -->
+
+                        <article class="game-card">
+                            <div class="game-card__image-container">
+                                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1145360/header.jpg" alt="Hades" class="game-card__image">
+                            </div>
+
+                            <div class="game-card__content">
+                                <h3 class="game-card__title">Hades</h3>
+                                <p class="game-card__description">Lucha para escapar del inframundo.</p>
+
+                                <div class="game-card__tags">
+                                    <span class="game-card__tag">Acción</span>
+                                    <span class="game-card__tag">Roguelike</span>
+                                </div>
+
+                                <div class="game-card__footer">
+                                    <span class="game-card__price">$24.99</span>
+                                    <button type="button" class="game-card__button">Ver juego</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- GAME 8 -->
+
+                        <article class="game-card">
+                            <div class="game-card__image-container">
+                                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/620/header.jpg" alt="Portal 2" class="game-card__image">
+                            </div>
+
+                            <div class="game-card__content">
+                                <h3 class="game-card__title">Portal 2</h3>
+                                <p class="game-card__description">Resuelve acertijos utilizando portales.</p>
+
+                                <div class="game-card__tags">
+                                    <span class="game-card__tag">Puzles</span>
+                                    <span class="game-card__tag">Ciencia ficción</span>
+                                </div>
+
+                                <div class="game-card__footer">
+                                    <span class="game-card__price">$9.99</span>
+                                    <button type="button" class="game-card__button">Ver juego</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- GAME 9 -->
+
+                        <article class="game-card">
+                            <div class="game-card__image-container">
+                                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/730/header.jpg" alt="Counter-Strike 2" class="game-card__image">
+                            </div>
+
+                            <div class="game-card__content">
+                                <h3 class="game-card__title">Counter-Strike 2</h3>
+                                <p class="game-card__description">Compite en partidas tácticas multijugador.</p>
+
+                                <div class="game-card__tags">
+                                    <span class="game-card__tag">FPS</span>
+                                    <span class="game-card__tag">Multijugador</span>
+                                </div>
+
+                                <div class="game-card__footer">
+                                    <span class="game-card__price">Gratis</span>
+                                    <button type="button" class="game-card__button">Ver juego</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- GAME 10 -->
+
+                        <article class="game-card">
+                            <div class="game-card__image-container">
+                                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/252490/header.jpg" alt="Rust" class="game-card__image">
+                            </div>
+
+                            <div class="game-card__content">
+                                <h3 class="game-card__title">Rust</h3>
+                                <p class="game-card__description">Sobrevive en un mundo abierto multijugador.</p>
+
+                                <div class="game-card__tags">
+                                    <span class="game-card__tag">Supervivencia</span>
+                                    <span class="game-card__tag">Multijugador</span>
+                                </div>
+
+                                <div class="game-card__footer">
+                                    <span class="game-card__price">$39.99</span>
+                                    <button type="button" class="game-card__button">Ver juego</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- GAME 11 -->
+
+                        <article class="game-card">
+                            <div class="game-card__image-container">
+                                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/105600/header.jpg" alt="Terraria" class="game-card__image">
+                            </div>
+
+                            <div class="game-card__content">
+                                <h3 class="game-card__title">Terraria</h3>
+                                <p class="game-card__description">Explora, construye y combate en un mundo 2D.</p>
+
+                                <div class="game-card__tags">
+                                    <span class="game-card__tag">Aventura</span>
+                                    <span class="game-card__tag">Sandbox</span>
+                                </div>
+
+                                <div class="game-card__footer">
+                                    <span class="game-card__price">$9.99</span>
+                                    <button type="button" class="game-card__button">Ver juego</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- GAME 12 -->
+
+                        <article class="game-card">
+                            <div class="game-card__image-container">
+                                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/440/header.jpg" alt="Team Fortress 2" class="game-card__image">
+                            </div>
+
+                            <div class="game-card__content">
+                                <h3 class="game-card__title">Team Fortress 2</h3>
+                                <p class="game-card__description">Disfruta de combates por equipos llenos de acción.</p>
+
+                                <div class="game-card__tags">
+                                    <span class="game-card__tag">Acción</span>
+                                    <span class="game-card__tag">Multijugador</span>
+                                </div>
+
+                                <div class="game-card__footer">
+                                    <span class="game-card__price">Gratis</span>
+                                    <button type="button" class="game-card__button">Ver juego</button>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+
+                    <!-- STORE PAGINATION -->
+
+                    <nav class="store__pagination" aria-label="Paginación de videojuegos">
+                        <button type="button" class="store__pagination-button store__pagination-button--active">1</button>
+                        <button type="button" class="store__pagination-button">2</button>
+                        <button type="button" class="store__pagination-button">3</button>
+                        <button type="button" class="store__pagination-button">Siguiente</button>
+                    </nav>
+
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+        <div class="footer__container">
+
+            <div class="footer__logo">
+                <img src="https://cdn.cloudflare.steamstatic.com/store/about/logo_steam.svg" alt="Steam">
+            </div>
+
+            <p class="footer__description">
+                Tu próximo videojuego favorito está a un clic de distancia.
+            </p>
+
+            <nav class="footer__nav">
+                <a href="../index.html" class="footer__link">Inicio</a>
+                <a href="store.html" class="footer__link">Tienda</a>
+                <a href="community.html" class="footer__link">Comunidad</a>
+                <a href="contact.html" class="footer__link">Contacto</a>
+            </nav>
+
+            <p class="footer__copyright">
+                &copy; 2026 Steam. Todos los derechos reservados.
+            </p>
+
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT: conectar buscador, filtros, ordenamiento, paginacion y botones de videojuegos. -->
+
+</body>
+</html>

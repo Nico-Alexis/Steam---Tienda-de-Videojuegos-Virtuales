@@ -1,13 +1,15 @@
-/* BASE */
-@import url("base/variables.css");
-@import url("base/reset.css");
+/*===== BASE =====*/
+@import url("./base/variables.css");
+@import url("./base/reset.css");
 
-/* COMPONENTS */
-@import url("components/header.css");
-@import url("components/footer.css");
-@import url("components/buttons.css");
-@import url("components/navigation.css");
-@import url("components/hero.css");
+/*===== COMPONENTS =====*/
+@import url("./components/header.css");
+@import url("./components/footer.css");
+@import url("./components/buttons.css");
+@import url("./components/navigation.css");
+@import url("./components/hero.css");
+@import url("./components/game-card.css");
 
-/* PAGES */
-@import url("pages/home.css");
+/*===== PAGES =====*/
+@import url("./pages/home.css");
+@import url("./pages/store.css");
