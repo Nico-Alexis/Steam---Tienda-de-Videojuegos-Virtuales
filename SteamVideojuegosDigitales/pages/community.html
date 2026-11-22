@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Comunidad | Steam</title>
+
+    <meta name="description" content="Conecta con otros jugadores, descubre comunidades y comparte tus experiencias de videojuegos.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/styles.css">
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+        <div class="header__container">
+
+            <a href="../index.html" class="header__logo">
+
+                <img
+                    src="https://cdn.cloudflare.steamstatic.com/store/about/logo_steam.svg"
+                    alt="Steam">
+
+            </a>
+
+
+            <nav class="header__nav" aria-label="Navegacion principal">
+
+                <ul class="header__menu">
+
+                    <li>
+                        <a href="../index.html" class="header__link">
+                            Inicio
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="store.html" class="header__link">
+                            Tienda
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="library.html" class="header__link">
+                            Biblioteca
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="community.html" class="header__link">
+                            Comunidad
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+
+            <div class="header__actions">
+
+                <a href="cart.html" class="header__cart">
+                    Carrito
+                </a>
+
+
+                <div class="header__account">
+
+                    <a href="login.html" class="header__account-link">
+                        Iniciar sesion
+                    </a>
+
+                    <a href="register.html" class="header__account-link">
+                        Registrarse
+                    </a>
+
+                </div>
+
+
+                <div class="header__profile" hidden>
+
+                    <span class="header__username">
+                        Usuario
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- MAIN -->
+
+    <main class="community">
+
+        <div class="community__container">
+
+
+            <!-- COMMUNITY HEADER -->
+
+            <section class="community__header">
+
+                <div class="community__header-content">
+
+                    <span class="community__eyebrow">
+                        CONECTA CON OTROS JUGADORES
+                    </span>
+
+                    <h1 class="community__title">
+                        Comunidad
+                    </h1>
+
+                    <p class="community__description">
+                        Comparte tus experiencias, descubre nuevos videojuegos
+                        y conecta con jugadores de todo el mundo.
+                    </p>
+
+                </div>
+
+
+                <div class="community__header-stat">
+
+                    <span class="community__header-number">
+                        125.4K
+                    </span>
+
+                    <span class="community__header-label">
+                        Jugadores registrados
+                    </span>
+
+                </div>
+
+            </section>
+
+
+            <!-- COMMUNITY NAVIGATION -->
+
+            <nav class="community__navigation" aria-label="Secciones de comunidad">
+
+                <a href="#activity" class="community__navigation-link community__navigation-link--active">
+                    Actividad
+                </a>
+
+                <a href="#friends" class="community__navigation-link">
+                    Amigos
+                </a>
+
+                <a href="#groups" class="community__navigation-link">
+                    Grupos
+                </a>
+
+            </nav>
+
+
+            <!-- COMMUNITY LAYOUT -->
+
+            <div class="community__layout">
+
+
+                <!-- MAIN COLUMN -->
+
+                <div class="community__main">
+
+
+                    <!-- CREATE POST -->
+
+                    <section class="community__create">
+
+                        <h2 class="community__section-title">
+                            Comparte algo con la comunidad
+                        </h2>
+
+
+                        <div class="community__create-content">
+
+                            <div class="community__avatar community__avatar--user">
+                                U
+                            </div>
+
+
+                            <textarea
+                                class="community__textarea"
+                                placeholder="¿Que estas jugando actualmente?"
+                                aria-label="Escribe una publicacion"
+                                maxlength="500"
+                                data-community-input></textarea>
+
+                        </div>
+
+
+                        <div class="community__create-footer">
+
+                            <span class="community__character-count">
+                                Maximo 500 caracteres
+                            </span>
+
+                            <button
+                                type="button"
+                                class="community__button"
+                                data-action="create-post">
+
+                                Publicar
+
+                            </button>
+
+                        </div>
+
+                    </section>
+
+
+                    <!-- ACTIVITY -->
+
+                    <section class="community__activity" id="activity">
+
+                        <div class="community__section-header">
+
+                            <h2 class="community__section-title">
+                                Actividad reciente
+                            </h2>
+
+
+                            <select
+                                class="community__select"
+                                aria-label="Filtrar actividad"
+                                data-community-filter>
+
+                                <option value="all">
+                                    Toda la actividad
+                                </option>
+
+                                <option value="friends">
+                                    Amigos
+                                </option>
+
+                                <option value="games">
+                                    Videojuegos
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="community__feed">
+
+
+                            <!-- POST 1 -->
+
+                            <article
+                                class="community__post"
+                                data-post-type="games">
+
+                                <div class="community__post-header">
+
+                                    <div class="community__avatar community__avatar--blue">
+                                        M
+                                    </div>
+
+
+                                    <div class="community__post-user">
+
+                                        <h3 class="community__post-username">
+                                            MarcosGaming
+                                        </h3>
+
+                                        <span class="community__post-date">
+                                            Hace 15 minutos
+                                        </span>
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="community__post-content">
+
+                                    <p class="community__post-text">
+                                        Finalmente termine mi primera partida de
+                                        Elden Ring. ¡Una experiencia increible!
+                                    </p>
+
+
+                                    <div class="community__post-game">
+
+                                        <img
+                                            src="https://cdn.cloudflare.steamstatic.com/steam/apps/1245620/header.jpg"
+                                            alt="Elden Ring"
+                                            class="community__post-game-image">
+
+                                        <div class="community__post-game-info">
+
+                                            <h4>
+                                                Elden Ring
+                                            </h4>
+
+                                            <span>
+                                                FromSoftware
+                                            </span>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="community__post-actions">
+
+                                    <button
+                                        type="button"
+                                        class="community__post-action"
+                                        data-action="like-post">
+
+                                        Me gusta
+
+                                        <span data-post-likes>
+                                            24
+                                        </span>
+
+                                    </button>
+
+
+                                    <button
+                                        type="button"
+                                        class="community__post-action"
+                                        data-action="comment-post">
+
+                                        Comentar
+
+                                        <span>
+                                            8
+                                        </span>
+
+                                    </button>
+
+                                </div>
+
+                            </article>
+
+
+                            <!-- POST 2 -->
+
+                            <article
+                                class="community__post"
+                                data-post-type="friends">
+
+                                <div class="community__post-header">
+
+                                    <div class="community__avatar community__avatar--purple">
+                                        L
+                                    </div>
+
+
+                                    <div class="community__post-user">
+
+                                        <h3 class="community__post-username">
+                                            LauraPlay
+                                        </h3>
+
+                                        <span class="community__post-date">
+                                            Hace 1 hora
+                                        </span>
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="community__post-content">
+
+                                    <p class="community__post-text">
+                                        Hoy descubri un videojuego indie bastante
+                                        interesante. Definitivamente merece una oportunidad.
+                                    </p>
+
+
+                                    <div class="community__post-game">
+
+                                        <img
+                                            src="https://cdn.cloudflare.steamstatic.com/steam/apps/367520/header.jpg"
+                                            alt="Hollow Knight"
+                                            class="community__post-game-image">
+
+                                        <div class="community__post-game-info">
+
+                                            <h4>
+                                                Hollow Knight
+                                            </h4>
+
+                                            <span>
+                                                Team Cherry
+                                            </span>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="community__post-actions">
+
+                                    <button
+                                        type="button"
+                                        class="community__post-action"
+                                        data-action="like-post">
+
+                                        Me gusta
+
+                                        <span data-post-likes>
+                                            16
+                                        </span>
+
+                                    </button>
+
+
+                                    <button
+                                        type="button"
+                                        class="community__post-action"
+                                        data-action="comment-post">
+
+                                        Comentar
+
+                                        <span>
+                                            4
+                                        </span>
+
+                                    </button>
+
+                                </div>
+
+                            </article>
+
+
+                            <!-- POST 3 -->
+
+                            <article
+                                class="community__post"
+                                data-post-type="games">
+
+                                <div class="community__post-header">
+
+                                    <div class="community__avatar community__avatar--green">
+                                        J
+                                    </div>
+
+
+                                    <div class="community__post-user">
+
+                                        <h3 class="community__post-username">
+                                            JuanFPS
+                                        </h3>
+
+                                        <span class="community__post-date">
+                                            Hace 3 horas
+                                        </span>
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="community__post-content">
+
+                                    <p class="community__post-text">
+                                        Recomiendo Red Dead Redemption 2 a todos
+                                        los amantes de los mundos abiertos.
+                                    </p>
+
+
+                                    <div class="community__post-game">
+
+                                        <img
+                                            src="https://cdn.cloudflare.steamstatic.com/steam/apps/1174180/header.jpg"
+                                            alt="Red Dead Redemption 2"
+                                            class="community__post-game-image">
+
+                                        <div class="community__post-game-info">
+
+                                            <h4>
+                                                Red Dead Redemption 2
+                                            </h4>
+
+                                            <span>
+                                                Rockstar Games
+                                            </span>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="community__post-actions">
+
+                                    <button
+                                        type="button"
+                                        class="community__post-action"
+                                        data-action="like-post">
+
+                                        Me gusta
+
+                                        <span data-post-likes>
+                                            42
+                                        </span>
+
+                                    </button>
+
+
+                                    <button
+                                        type="button"
+                                        class="community__post-action"
+                                        data-action="comment-post">
+
+                                        Comentar
+
+                                        <span>
+                                            12
+                                        </span>
+
+                                    </button>
+
+                                </div>
+
+                            </article>
+
+
+                        </div>
+
+                    </section>
+
+                </div>
+
+
+                <!-- SIDEBAR -->
+
+                <aside class="community__sidebar">
+
+
+                    <!-- FRIENDS -->
+
+                    <section class="community__sidebar-section" id="friends">
+
+                        <div class="community__sidebar-header">
+
+                            <h2 class="community__section-title">
+                                Amigos
+                            </h2>
+
+                            <span class="community__sidebar-count">
+                                4
+                            </span>
+
+                        </div>
+
+
+                        <div class="community__friends">
+
+
+                            <article class="community__friend">
+
+                                <div class="community__avatar community__avatar--blue">
+                                    M
+                                </div>
+
+                                <div class="community__friend-info">
+
+                                    <h3 class="community__friend-name">
+                                        MarcosGaming
+                                    </h3>
+
+                                    <span class="community__friend-status community__friend-status--online">
+                                        En linea
+                                    </span>
+
+                                </div>
+
+                                <button
+                                    type="button"
+                                    class="community__friend-button"
+                                    data-action="view-friend"
+                                    aria-label="Ver perfil de MarcosGaming">
+
+                                    Ver
+
+                                </button>
+
+                            </article>
+
+
+                            <article class="community__friend">
+
+                                <div class="community__avatar community__avatar--purple">
+                                    L
+                                </div>
+
+                                <div class="community__friend-info">
+
+                                    <h3 class="community__friend-name">
+                                        LauraPlay
+                                    </h3>
+
+                                    <span class="community__friend-status community__friend-status--online">
+                                        En linea
+                                    </span>
+
+                                </div>
+
+                                <button
+                                    type="button"
+                                    class="community__friend-button"
+                                    data-action="view-friend"
+                                    aria-label="Ver perfil de LauraPlay">
+
+                                    Ver
+
+                                </button>
+
+                            </article>
+
+
+                            <article class="community__friend">
+
+                                <div class="community__avatar community__avatar--green">
+                                    J
+                                </div>
+
+                                <div class="community__friend-info">
+
+                                    <h3 class="community__friend-name">
+                                        JuanFPS
+                                    </h3>
+
+                                    <span class="community__friend-status community__friend-status--offline">
+                                        Desconectado
+                                    </span>
+
+                                </div>
+
+                                <button
+                                    type="button"
+                                    class="community__friend-button"
+                                    data-action="view-friend"
+                                    aria-label="Ver perfil de JuanFPS">
+
+                                    Ver
+
+                                </button>
+
+                            </article>
+
+
+                            <article class="community__friend">
+
+                                <div class="community__avatar community__avatar--orange">
+                                    A
+                                </div>
+
+                                <div class="community__friend-info">
+
+                                    <h3 class="community__friend-name">
+                                        AlexGame
+                                    </h3>
+
+                                    <span class="community__friend-status community__friend-status--online">
+                                        En linea
+                                    </span>
+
+                                </div>
+
+                                <button
+                                    type="button"
+                                    class="community__friend-button"
+                                    data-action="view-friend"
+                                    aria-label="Ver perfil de AlexGame">
+
+                                    Ver
+
+                                </button>
+
+                            </article>
+
+
+                        </div>
+
+
+                        <a href="profile.html" class="community__sidebar-link">
+                            Ver mi perfil
+                        </a>
+
+                    </section>
+
+
+                    <!-- GROUPS -->
+
+                    <section class="community__sidebar-section" id="groups">
+
+                        <div class="community__sidebar-header">
+
+                            <h2 class="community__section-title">
+                                Grupos destacados
+                            </h2>
+
+                        </div>
+
+
+                        <div class="community__groups">
+
+
+                            <article class="community__group">
+
+                                <div class="community__group-image community__group-image--blue">
+                                    ER
+                                </div>
+
+                                <div class="community__group-info">
+
+                                    <h3 class="community__group-name">
+                                        Elden Ring Community
+                                    </h3>
+
+                                    <span class="community__group-members">
+                                        12.450 integrantes
+                                    </span>
+
+                                </div>
+
+                                <button
+                                    type="button"
+                                    class="community__group-button"
+                                    data-action="join-group">
+
+                                    Unirse
+
+                                </button>
+
+                            </article>
+
+
+                            <article class="community__group">
+
+                                <div class="community__group-image community__group-image--orange">
+                                    CP
+                                </div>
+
+                                <div class="community__group-info">
+
+                                    <h3 class="community__group-name">
+                                        Cyberpunk Players
+                                    </h3>
+
+                                    <span class="community__group-members">
+                                        8.320 integrantes
+                                    </span>
+
+                                </div>
+
+                                <button
+                                    type="button"
+                                    class="community__group-button"
+                                    data-action="join-group">
+
+                                    Unirse
+
+                                </button>
+
+                            </article>
+
+
+                            <article class="community__group">
+
+                                <div class="community__group-image community__group-image--green">
+                                    ST
+                                </div>
+
+                                <div class="community__group-info">
+
+                                    <h3 class="community__group-name">
+                                        Indie Games Club
+                                    </h3>
+
+                                    <span class="community__group-members">
+                                        5.680 integrantes
+                                    </span>
+
+                                </div>
+
+                                <button
+                                    type="button"
+                                    class="community__group-button"
+                                    data-action="join-group">
+
+                                    Unirse
+
+                                </button>
+
+                            </article>
+
+
+                        </div>
+
+
+                        <a href="#groups" class="community__sidebar-link">
+                            Explorar grupos
+                        </a>
+
+                    </section>
+
+
+                    <!-- COMMUNITY INFORMATION -->
+
+                    <section class="community__information">
+
+                        <h2 class="community__information-title">
+                            Sobre la comunidad
+                        </h2>
+
+                        <p class="community__information-description">
+                            Un espacio para compartir experiencias, descubrir
+                            videojuegos y conectar con otros jugadores.
+                        </p>
+
+                    </section>
+
+
+                </aside>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <div class="footer__container">
+
+            <div class="footer__info">
+
+                <a href="../index.html" class="footer__logo">
+                    STEAM
+                </a>
+
+                <p class="footer__description">
+                    Tu destino para descubrir, comprar y disfrutar videojuegos.
+                </p>
+
+            </div>
+
+
+            <nav class="footer__nav" aria-label="Navegacion del pie de pagina">
+
+                <a href="../index.html" class="footer__link">
+                    Inicio
+                </a>
+
+                <a href="store.html" class="footer__link">
+                    Tienda
+                </a>
+
+                <a href="library.html" class="footer__link">
+                    Biblioteca
+                </a>
+
+                <a href="profile.html" class="footer__link">
+                    Perfil
+                </a>
+
+                <a href="contact.html" class="footer__link">
+                    Contacto
+                </a>
+
+            </nav>
+
+        </div>
+
+
+        <div class="footer__copyright">
+
+            <p>
+                &copy; 2026 Steam. Todos los derechos reservados.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript: gestionar publicaciones, comentarios, reacciones, amigos y grupos. -->
+
+</body>
+</html>
+
