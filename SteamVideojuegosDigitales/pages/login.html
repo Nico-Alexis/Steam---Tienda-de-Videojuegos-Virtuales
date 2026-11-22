@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Iniciar Sesion | Steam</title>
+
+    <meta name="description" content="Inicia sesion en tu cuenta de Steam para acceder a tus videojuegos.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="header">
+        <div class="header__container">
+
+            <a href="../index.html" class="header__logo">
+                <img src="https://cdn.cloudflare.steamstatic.com/store/about/logo_steam.svg" alt="Steam">
+            </a>
+
+            <nav class="header__nav" aria-label="Navegacion principal">
+                <ul class="header__menu">
+                    <li><a href="../index.html" class="header__link">Inicio</a></li>
+                    <li><a href="store.html" class="header__link">Tienda</a></li>
+                    <li><a href="community.html" class="header__link">Comunidad</a></li>
+                </ul>
+            </nav>
+
+            <div class="header__actions">
+
+                <a href="cart.html" class="header__cart">Carrito</a>
+
+                <div class="header__account">
+                    <a href="login.html" class="button button--secondary button--small">
+                        Iniciar Sesion
+                    </a>
+
+                    <a href="register.html" class="button button--small">
+                        Registrarse
+                    </a>
+                </div>
+
+                <div class="header__profile" hidden>
+                    <img
+                        src="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/ee/eea4b4e6a6f9a4b4f7f4f4f4f4f4f4f4f4f4f4.jpg"
+                        alt="Avatar del usuario"
+                        class="header__avatar">
+
+                    <span class="header__username">Usuario</span>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+
+    <!-- MAIN -->
+
+    <main class="auth">
+
+        <div class="auth__container">
+
+            <div class="auth__card">
+
+                <header class="auth__header">
+
+                    <p class="auth__eyebrow">BIENVENIDO DE NUEVO</p>
+
+                    <h1 class="auth__title">Iniciar Sesion</h1>
+
+                    <p class="auth__description">
+                        Accede a tu cuenta y continua disfrutando de tus videojuegos favoritos.
+                    </p>
+
+                </header>
+
+
+                <!-- LOGIN FORM -->
+
+                <form class="auth__form" action="#" method="post" data-form="login">
+
+                    <div class="auth__field">
+
+                        <label for="login-email" class="auth__label">
+                            Correo electronico
+                        </label>
+
+                        <input
+                            type="email"
+                            id="login-email"
+                            name="email"
+                            class="auth__input"
+                            placeholder="ejemplo@correo.com"
+                            autocomplete="email"
+                            required>
+
+                    </div>
+
+
+                    <div class="auth__field">
+
+                        <div class="auth__label-group">
+
+                            <label for="login-password" class="auth__label">
+                                Contraseña
+                            </label>
+
+                            <a href="#" class="auth__forgot">
+                                ¿Olvidaste tu contraseña?
+                            </a>
+
+                        </div>
+
+                        <input
+                            type="password"
+                            id="login-password"
+                            name="password"
+                            class="auth__input"
+                            placeholder="Introduce tu contraseña"
+                            autocomplete="current-password"
+                            required>
+
+                    </div>
+
+
+                    <label class="auth__checkbox">
+
+                        <input
+                            type="checkbox"
+                            name="remember"
+                            value="yes">
+
+                        <span>Recordar mi cuenta</span>
+
+                    </label>
+
+
+                    <button type="submit" class="button button--large button--full auth__submit">
+                        Iniciar Sesion
+                    </button>
+
+                </form>
+
+
+                <div class="auth__divider">
+                    <span>¿Todavia no tienes una cuenta?</span>
+                </div>
+
+
+                <a href="register.html" class="button button--secondary button--full">
+                    Crear una cuenta
+                </a>
+
+
+                <p class="auth__terms">
+                    Al iniciar sesion aceptas nuestras condiciones de uso y politica de privacidad.
+                </p>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <div class="footer__container">
+
+            <div class="footer__info">
+
+                <a href="../index.html" class="footer__logo">STEAM</a>
+
+                <p class="footer__description">
+                    Tu destino para descubrir, comprar y disfrutar videojuegos.
+                </p>
+
+            </div>
+
+            <nav class="footer__nav" aria-label="Navegacion del pie de pagina">
+
+                <a href="../index.html" class="footer__link">Inicio</a>
+                <a href="store.html" class="footer__link">Tienda</a>
+                <a href="community.html" class="footer__link">Comunidad</a>
+                <a href="contact.html" class="footer__link">Contacto</a>
+
+            </nav>
+
+        </div>
+
+        <div class="footer__copyright">
+
+            <p>&copy; 2026 Steam. Todos los derechos reservados.</p>
+
+        </div>
+
+    </footer>
+
+    <!-- JavaScript: validar credenciales e iniciar sesion. -->
+
+</body>
+</html>
+
