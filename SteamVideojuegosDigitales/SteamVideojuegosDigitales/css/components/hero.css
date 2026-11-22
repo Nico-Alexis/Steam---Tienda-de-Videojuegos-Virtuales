@@ -1,0 +1,95 @@
+/*===== HERO =====*/
+.hero {
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    background-color: var(--color-primary-light);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.hero__container {
+    width: 100%;
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: var(--spacing-xxl) var(--spacing-large);
+}
+
+.hero__content {
+    max-width: 550px;
+    padding: var(--spacing-large);
+    background-color: rgba(14, 20, 27, 0.85);
+    border-radius: var(--border-radius-medium);
+}
+
+.hero__title {
+    margin-bottom: var(--spacing-medium);
+    color: var(--color-text-white);
+    font-size: var(--font-size-xxl);
+    font-weight: 700;
+}
+
+.hero__subtitle {
+    margin-bottom: var(--spacing-large);
+    color: var(--color-text);
+    font-size: var(--font-size-medium);
+}
+
+.hero__description {
+    margin-bottom: var(--spacing-large);
+    color: var(--color-text-light);
+    font-size: var(--font-size-base);
+}
+
+.hero__actions {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--spacing-medium);
+}
+
+.hero__price {
+    color: var(--color-success);
+    font-size: var(--font-size-large);
+    font-weight: 700;
+}
+
+/*===== RESPONSIVE =====*/
+@media (max-width: 768px) {
+    .hero {
+        min-height: 350px;
+    }
+
+    .hero__container {
+        padding: var(--spacing-large);
+    }
+
+    .hero__content {
+        max-width: 100%;
+    }
+
+    .hero__title {
+        font-size: var(--font-size-xl);
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        min-height: 300px;
+    }
+
+    .hero__title {
+        font-size: var(--font-size-large);
+    }
+
+    .hero__subtitle {
+        font-size: var(--font-size-base);
+    }
+}
+
+/*
+La imagen de fondo "Banner" se establecera desde HTML mediante el atributo style o posteriormente mediante JavaScript.
+*/

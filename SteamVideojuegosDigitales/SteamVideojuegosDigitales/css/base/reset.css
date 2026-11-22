@@ -1,0 +1,56 @@
+/*===== RESET GENERAL =====*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*===== CONFIGURACION GENERAL =====*/
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-size-base);
+    color: var(--color-text);
+    background-color: var(--color-background);
+    line-height: 1.5;
+}
+
+/*===== IMAGENES =====*/
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/*===== ENLACES =====*/
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/*===== LISTAS =====*/
+ul, ol {
+    list-style: none;
+}
+
+/*===== BOTONES =====*/
+button {
+    font-family: inherit;
+    cursor: pointer;
+}
+
+/*===== FORMULARIOS =====*/
+input, textarea, select {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+/*===== ELEMENTOS GENERALES =====*/
+button, input, textarea, select {
+    outline-color: var(--color-secondary);
+}
+
+
+
