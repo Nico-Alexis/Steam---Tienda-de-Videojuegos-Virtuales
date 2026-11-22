@@ -1,0 +1,208 @@
+/* HOME */
+.home {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.home__container {
+    width: 100%;
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 var(--spacing-large);
+}
+
+/* SECTIONS */
+.home__section {
+    padding: var(--spacing-xxl) 0;
+}
+
+.home__section--offers {
+    background-color: var(--color-primary-light);
+}
+
+.home__section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--spacing-large);
+    margin-bottom: var(--spacing-xl);
+}
+
+.home__section-title {
+    margin-bottom: var(--spacing-small);
+    color: var(--color-text-white);
+    font-size: var(--font-size-xl);
+    font-weight: 700;
+}
+
+.home__section-description {
+    color: var(--color-text-light);
+    font-size: var(--font-size-base);
+}
+
+/* GAME GRID */
+.home__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing-large);
+}
+
+/* GAME CARD */
+.home-game {
+    min-width: 0;
+    overflow: hidden;
+    background-color: var(--color-background-card);
+    border-radius: var(--border-radius-medium);
+    box-shadow: var(--shadow-small);
+    transition: all var(--transition-medium);
+}
+
+.home-game:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-medium);
+}
+
+.home-game__link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.home-game__image {
+    width: 100%;
+    height: 145px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.home-game__content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: var(--spacing-medium);
+}
+
+.home-game__title {
+    margin-bottom: var(--spacing-small);
+    color: var(--color-text-white);
+    font-size: var(--font-size-medium);
+    font-weight: 700;
+}
+
+.home-game__genre {
+    margin-bottom: var(--spacing-medium);
+    color: var(--color-text-light);
+    font-size: var(--font-size-small);
+}
+
+.home-game__price {
+    margin-top: auto;
+    color: var(--color-success);
+    font-size: var(--font-size-medium);
+    font-weight: 700;
+}
+
+/* OFFERS */
+.home-game__prices {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--spacing-small);
+    margin-top: auto;
+}
+
+.home-game__discount {
+    padding: var(--spacing-xs) var(--spacing-small);
+    border-radius: var(--border-radius-small);
+    background-color: var(--color-success);
+    color: var(--color-text-dark);
+    font-size: var(--font-size-small);
+    font-weight: 700;
+}
+
+.home-game__old-price {
+    color: var(--color-text-light);
+    font-size: var(--font-size-small);
+    text-decoration: line-through;
+}
+
+.home-game--offer .home-game__price {
+    color: var(--color-success);
+}
+
+/* BANNER */
+.home__banner {
+    min-height: 280px;
+    display: flex;
+    align-items: center;
+    padding: var(--spacing-xxl);
+    border-radius: var(--border-radius-medium);
+    background: linear-gradient(110deg, #1b2838, #23496b, #102536);
+    box-shadow: var(--shadow-medium);
+}
+
+.home__banner-content {
+    max-width: 550px;
+}
+
+.home__banner-title {
+    margin-bottom: var(--spacing-medium);
+    color: var(--color-text-white);
+    font-size: var(--font-size-xl);
+}
+
+.home__banner-description {
+    margin-bottom: var(--spacing-large);
+    color: var(--color-text);
+    font-size: var(--font-size-base);
+    line-height: 1.7;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1000px) {
+    .home__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .home__section-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .home__section-title {
+        font-size: var(--font-size-large);
+    }
+
+    .home__banner {
+        padding: var(--spacing-large);
+    }
+}
+
+@media (max-width: 480px) {
+    .home__container {
+        padding: 0 var(--spacing-medium);
+    }
+
+    .home__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .home__section {
+        padding: var(--spacing-xl) 0;
+    }
+
+    .home__section-title {
+        font-size: var(--font-size-medium);
+    }
+
+    .home__banner {
+        min-height: 250px;
+    }
+
+    .home__banner-title {
+        font-size: var(--font-size-large);
+    }
+}
+

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Steam | Inicio</title>
+
+    <meta name="description" content="Descubre nuevos videojuegos, ofertas especiales y los mejores lanzamientos en Steam.">
+    <meta name="keywords" content="steam, videojuegos, juegos, gaming, ofertas, tienda, comunidad">
+    <meta name="author" content="Steam">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:title" content="Steam | Inicio">
+    <meta property="og:description" content="Descubre nuevos videojuegos, ofertas especiales y los mejores lanzamientos.">
+    <meta property="og:image" content="https://cdn.cloudflare.steamstatic.com/steam/apps/1245620/library_hero.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Steam">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header__container">
+
+            <a href="index.html" class="header__logo">
+                <img src="https://store.cloudflare.steamstatic.com/public/shared/images/header/logo_steam.svg" alt="Steam Logo">
+            </a>
+
+            <nav class="header__nav">
+                <ul class="header__menu">
+                    <li><a href="index.html" class="header__link">INICIO</a></li>
+                    <li><a href="pages/store.html" class="header__link">TIENDA</a></li>
+                    <li><a href="pages/community.html" class="header__link">COMUNIDAD</a></li>
+                </ul>
+            </nav>
+
+            <div class="header__actions">
+                <a href="pages/cart.html" class="header__cart">Carrito</a>
+
+                <div class="header__account">
+                    <a href="pages/login.html" class="button button--secondary button--small">Iniciar Sesion</a>
+                    <a href="pages/signup.html" class="button button--small">Registrarse</a>
+                </div>
+
+                <!-- Para JavaScript: mostrar header__profile y ocultar header__account cuando exista una sesion iniciada. -->
+                <div class="header__profile" hidden>
+                    <img src="https://avatars.steamstatic.com/0000000000000000000000000000000000000000_full.jpg" alt="Avatar del usuario" class="header__avatar">
+                    <a href="pages/profile.html" class="header__username">Username</a>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN -->
+    <main class="home">
+
+        <!-- HERO -->
+        <section class="hero" style="background-image: url('https://cdn.cloudflare.steamstatic.com/steam/apps/1245620/library_hero.jpg');">
+            <div class="hero__container">
+                <div class="hero__content">
+                    <h1 class="hero__title">Elden Ring</h1>
+                    <p class="hero__subtitle">Un mundo de fantasia y aventuras te espera.</p>
+                    <p class="hero__description">Explora las Tierras Intermedias, descubre sus secretos y enfrenta desafiantes enemigos en una aventura inolvidable.</p>
+
+                    <div class="hero__actions">
+                        <a href="pages/store.html" class="button">Explorar videojuego</a>
+                        <span class="hero__price">$39.99</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FEATURED GAMES -->
+        <section class="home__section">
+            <div class="home__container">
+
+                <div class="home__section-header">
+                    <div>
+                        <h2 class="home__section-title">Videojuegos destacados</h2>
+                        <p class="home__section-description">Descubre algunos de los titulos mas populares.</p>
+                    </div>
+
+                    <a href="pages/store.html" class="button button--secondary button--small">Ver tienda</a>
+                </div>
+
+                <div class="home__grid">
+
+                    <article class="home-game">
+                        <a href="pages/store.html" class="home-game__link">
+                            <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1091500/header.jpg" alt="Cyberpunk 2077" class="home-game__image">
+                            <div class="home-game__content">
+                                <h3 class="home-game__title">Cyberpunk 2077</h3>
+                                <p class="home-game__genre">RPG, Mundo abierto, Accion</p>
+                                <span class="home-game__price">$59.99</span>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="home-game">
+                        <a href="pages/store.html" class="home-game__link">
+                            <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1245620/header.jpg" alt="Elden Ring" class="home-game__image">
+                            <div class="home-game__content">
+                                <h3 class="home-game__title">Elden Ring</h3>
+                                <p class="home-game__genre">RPG, Fantasia, Souls-like</p>
+                                <span class="home-game__price">$39.99</span>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="home-game">
+                        <a href="pages/store.html" class="home-game__link">
+                            <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1174180/header.jpg" alt="Red Dead Redemption 2" class="home-game__image">
+                            <div class="home-game__content">
+                                <h3 class="home-game__title">Red Dead Redemption 2</h3>
+                                <p class="home-game__genre">Accion, Aventura, Western</p>
+                                <span class="home-game__price">$59.99</span>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="home-game">
+                        <a href="pages/store.html" class="home-game__link">
+                            <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1086940/header.jpg" alt="Baldur's Gate 3" class="home-game__image">
+                            <div class="home-game__content">
+                                <h3 class="home-game__title">Baldur's Gate 3</h3>
+                                <p class="home-game__genre">RPG, Fantasia, Estrategia</p>
+                                <span class="home-game__price">$59.99</span>
+                            </div>
+                        </a>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SPECIAL OFFERS -->
+        <section class="home__section home__section--offers">
+            <div class="home__container">
+
+                <div class="home__section-header">
+                    <div>
+                        <h2 class="home__section-title">Ofertas especiales</h2>
+                        <p class="home__section-description">Encuentra grandes aventuras a precios especiales.</p>
+                    </div>
+
+                    <a href="pages/store.html" class="button button--secondary button--small">Todas las ofertas</a>
+                </div>
+
+                <div class="home__grid">
+
+                    <article class="home-game home-game--offer">
+                        <a href="pages/store.html" class="home-game__link">
+                            <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/367520/header.jpg" alt="Hollow Knight" class="home-game__image">
+                            <div class="home-game__content">
+                                <h3 class="home-game__title">Hollow Knight</h3>
+                                <p class="home-game__genre">Metroidvania, Indie, Aventura</p>
+                                <div class="home-game__prices">
+                                    <span class="home-game__discount">-50%</span>
+                                    <span class="home-game__old-price">$14.99</span>
+                                    <span class="home-game__price">$7.49</span>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="home-game home-game--offer">
+                        <a href="pages/store.html" class="home-game__link">
+                            <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/413150/header.jpg" alt="Stardew Valley" class="home-game__image">
+                            <div class="home-game__content">
+                                <h3 class="home-game__title">Stardew Valley</h3>
+                                <p class="home-game__genre">Simulacion, Indie, Agricultura</p>
+                                <div class="home-game__prices">
+                                    <span class="home-game__discount">-30%</span>
+                                    <span class="home-game__old-price">$14.99</span>
+                                    <span class="home-game__price">$10.49</span>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="home-game home-game--offer">
+                        <a href="pages/store.html" class="home-game__link">
+                            <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/620/header.jpg" alt="Portal 2" class="home-game__image">
+                            <div class="home-game__content">
+                                <h3 class="home-game__title">Portal 2</h3>
+                                <p class="home-game__genre">Puzzle, Cooperativo, Ciencia ficcion</p>
+                                <div class="home-game__prices">
+                                    <span class="home-game__discount">-75%</span>
+                                    <span class="home-game__old-price">$9.99</span>
+                                    <span class="home-game__price">$2.49</span>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="home-game home-game--offer">
+                        <a href="pages/store.html" class="home-game__link">
+                            <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1145360/header.jpg" alt="Hades" class="home-game__image">
+                            <div class="home-game__content">
+                                <h3 class="home-game__title">Hades</h3>
+                                <p class="home-game__genre">Roguelike, Accion, Indie</p>
+                                <div class="home-game__prices">
+                                    <span class="home-game__discount">-40%</span>
+                                    <span class="home-game__old-price">$24.99</span>
+                                    <span class="home-game__price">$14.99</span>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- LATEST RELEASES -->
+        <section class="home__section">
+            <div class="home__container">
+
+                <div class="home__section-header">
+                    <div>
+                        <h2 class="home__section-title">Explora nuevos lanzamientos</h2>
+                        <p class="home__section-description">Descubre nuevas experiencias y aventuras.</p>
+                    </div>
+
+                    <a href="pages/store.html" class="button button--secondary button--small">Explorar catalogo</a>
+                </div>
+
+                <div class="home__banner">
+                    <div class="home__banner-content">
+                        <h3 class="home__banner-title">Tu proxima aventura comienza aqui</h3>
+                        <p class="home__banner-description">Explora cientos de videojuegos y encuentra tu proxima experiencia favorita.</p>
+                        <a href="pages/store.html" class="button">Visitar tienda</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer__container">
+
+            <div class="footer__info">
+                <a href="index.html" class="footer__logo">STEAM</a>
+                <p class="footer__description">Tu destino para descubrir, comprar y disfrutar videojuegos.</p>
+            </div>
+
+            <nav class="footer__nav">
+                <a href="pages/store.html" class="footer__link">Tienda</a>
+                <a href="pages/community.html" class="footer__link">Comunidad</a>
+                <a href="pages/library.html" class="footer__link">Biblioteca</a>
+                <a href="pages/profile.html" class="footer__link">Perfil</a>
+            </nav>
+
+        </div>
+
+        <div class="footer__copyright">
+            <p>&copy; 2026 Steam. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
+
+<!--
+Para JavaScript: los videojuegos y precios de esta pagina son datos de demostracion.
+Sustituirlos posteriormente por la informacion obtenida mediante la API. Mantener las clases BEM para conservar los estilos.
+-->
