@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mi Perfil | Steam</title>
+
+    <meta name="description" content="Consulta tu perfil, estadisticas y actividad dentro de Steam.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+        <div class="header__container">
+
+            <a href="../index.html" class="header__logo">
+                <img src="https://cdn.cloudflare.steamstatic.com/store/about/logo_steam.svg" alt="Steam">
+            </a>
+
+            <nav class="header__nav" aria-label="Navegacion principal">
+
+                <ul class="header__menu">
+
+                    <li>
+                        <a href="../index.html" class="header__link">Inicio</a>
+                    </li>
+
+                    <li>
+                        <a href="store.html" class="header__link">Tienda</a>
+                    </li>
+
+                    <li>
+                        <a href="library.html" class="header__link">Biblioteca</a>
+                    </li>
+
+                    <li>
+                        <a href="community.html" class="header__link">Comunidad</a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+            <div class="header__actions">
+
+                <a href="cart.html" class="header__cart">
+                    Carrito
+                </a>
+
+                <div class="header__account">
+
+                    <a href="login.html" class="header__account-link">
+                        Iniciar sesion
+                    </a>
+
+                    <a href="register.html" class="header__account-link">
+                        Registrarse
+                    </a>
+
+                </div>
+
+                <div class="header__profile" hidden>
+
+                    <span class="header__username">Usuario</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- MAIN -->
+
+    <main class="profile">
+
+        <div class="profile__container">
+
+            <!-- BREADCRUMB -->
+
+            <nav class="profile__breadcrumb" aria-label="Ruta de navegacion">
+
+                <a href="../index.html">Inicio</a>
+
+                <span>/</span>
+
+                <span>Mi perfil</span>
+
+            </nav>
+
+
+            <!-- PROFILE HEADER -->
+
+            <section class="profile__header">
+
+                <div class="profile__banner">
+
+                    <div class="profile__banner-content">
+
+                        <span class="profile__banner-label">
+                            PERFIL DE JUGADOR
+                        </span>
+
+                        <h1 class="profile__banner-title">
+                            Mi perfil
+                        </h1>
+
+                    </div>
+
+                </div>
+
+
+                <div class="profile__information">
+
+                    <div class="profile__avatar">
+                        U
+                    </div>
+
+                    <div class="profile__identity">
+
+                        <h2 class="profile__username">
+                            UsuarioDemo
+                        </h2>
+
+                        <p class="profile__status">
+                            <span class="profile__status-indicator"></span>
+                            Jugador activo
+                        </p>
+
+                        <p class="profile__description">
+                            Bienvenido a mi perfil. Me encantan los videojuegos de aventura,
+                            accion y mundo abierto.
+                        </p>
+
+                    </div>
+
+
+                    <div class="profile__actions">
+
+                        <a href="library.html" class="button">
+                            Mi biblioteca
+                        </a>
+
+                        <button
+                            type="button"
+                            class="button button--secondary"
+                            data-action="edit-profile">
+
+                            Editar perfil
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- PROFILE CONTENT -->
+
+            <div class="profile__content">
+
+
+                <!-- PROFILE STATISTICS -->
+
+                <section class="profile__statistics">
+
+                    <h2 class="profile__section-title">
+                        Estadisticas
+                    </h2>
+
+                    <div class="profile__stats-grid">
+
+                        <article class="profile__stat-card">
+
+                            <span class="profile__stat-number">
+                                12
+                            </span>
+
+                            <span class="profile__stat-label">
+                                Videojuegos
+                            </span>
+
+                        </article>
+
+
+                        <article class="profile__stat-card">
+
+                            <span class="profile__stat-number">
+                                8
+                            </span>
+
+                            <span class="profile__stat-label">
+                                Favoritos
+                            </span>
+
+                        </article>
+
+
+                        <article class="profile__stat-card">
+
+                            <span class="profile__stat-number">
+                                15
+                            </span>
+
+                            <span class="profile__stat-label">
+                                Horas jugadas
+                            </span>
+
+                        </article>
+
+
+                        <article class="profile__stat-card">
+
+                            <span class="profile__stat-number">
+                                2026
+                            </span>
+
+                            <span class="profile__stat-label">
+                                Miembro desde
+                            </span>
+
+                        </article>
+
+                    </div>
+
+                </section>
+
+
+                <!-- FAVORITE GAMES -->
+
+                <section class="profile__favorites">
+
+                    <div class="profile__section-header">
+
+                        <h2 class="profile__section-title">
+                            Videojuegos favoritos
+                        </h2>
+
+                        <a href="library.html" class="profile__view-all">
+                            Ver biblioteca
+                        </a>
+
+                    </div>
+
+
+                    <div class="profile__favorites-grid">
+
+
+                        <article class="profile__favorite-card">
+
+                            <img
+                                src="https://cdn.cloudflare.steamstatic.com/steam/apps/1091500/header.jpg"
+                                alt="Cyberpunk 2077"
+                                class="profile__favorite-image">
+
+                            <div class="profile__favorite-content">
+
+                                <h3 class="profile__favorite-title">
+                                    Cyberpunk 2077
+                                </h3>
+
+                                <span class="profile__favorite-category">
+                                    RPG
+                                </span>
+
+                            </div>
+
+                        </article>
+
+
+                        <article class="profile__favorite-card">
+
+                            <img
+                                src="https://cdn.cloudflare.steamstatic.com/steam/apps/1245620/header.jpg"
+                                alt="Elden Ring"
+                                class="profile__favorite-image">
+
+                            <div class="profile__favorite-content">
+
+                                <h3 class="profile__favorite-title">
+                                    Elden Ring
+                                </h3>
+
+                                <span class="profile__favorite-category">
+                                    Aventura
+                                </span>
+
+                            </div>
+
+                        </article>
+
+
+                        <article class="profile__favorite-card">
+
+                            <img
+                                src="https://cdn.cloudflare.steamstatic.com/steam/apps/413150/header.jpg"
+                                alt="Stardew Valley"
+                                class="profile__favorite-image">
+
+                            <div class="profile__favorite-content">
+
+                                <h3 class="profile__favorite-title">
+                                    Stardew Valley
+                                </h3>
+
+                                <span class="profile__favorite-category">
+                                    Simulacion
+                                </span>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+                </section>
+
+
+                <!-- RECENT ACTIVITY -->
+
+                <section class="profile__activity">
+
+                    <h2 class="profile__section-title">
+                        Actividad reciente
+                    </h2>
+
+
+                    <div class="profile__activity-list">
+
+
+                        <article class="profile__activity-item">
+
+                            <div class="profile__activity-icon">
+                                J
+                            </div>
+
+                            <div class="profile__activity-information">
+
+                                <h3 class="profile__activity-title">
+                                    Se unio a la plataforma
+                                </h3>
+
+                                <p class="profile__activity-description">
+                                    Comenzo su aventura en nuestra tienda de videojuegos.
+                                </p>
+
+                                <span class="profile__activity-date">
+                                    22 de noviembre de 2026
+                                </span>
+
+                            </div>
+
+                        </article>
+
+
+                        <article class="profile__activity-item">
+
+                            <div class="profile__activity-icon">
+                                G
+                            </div>
+
+                            <div class="profile__activity-information">
+
+                                <h3 class="profile__activity-title">
+                                    Exploro su biblioteca
+                                </h3>
+
+                                <p class="profile__activity-description">
+                                    Consulto sus videojuegos disponibles.
+                                </p>
+
+                                <span class="profile__activity-date">
+                                    Actividad reciente
+                                </span>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+                </section>
+
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <div class="footer__container">
+
+            <div class="footer__info">
+
+                <a href="../index.html" class="footer__logo">
+                    STEAM
+                </a>
+
+                <p class="footer__description">
+                    Tu destino para descubrir, comprar y disfrutar videojuegos.
+                </p>
+
+            </div>
+
+
+            <nav class="footer__nav" aria-label="Navegacion del pie de pagina">
+
+                <a href="../index.html" class="footer__link">Inicio</a>
+
+                <a href="store.html" class="footer__link">Tienda</a>
+
+                <a href="library.html" class="footer__link">Biblioteca</a>
+
+                <a href="community.html" class="footer__link">Comunidad</a>
+
+                <a href="contact.html" class="footer__link">Contacto</a>
+
+            </nav>
+
+        </div>
+
+
+        <div class="footer__copyright">
+
+            <p>&copy; 2026 Steam. Todos los derechos reservados.</p>
+
+        </div>
+
+    </footer>
+
+    <!-- JavaScript: cargar informacion y actualizar el perfil del usuario. -->
+
+</body>
+</html>
+

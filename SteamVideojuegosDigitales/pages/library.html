@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mi Biblioteca | Steam</title>
+
+    <meta name="description" content="Consulta y organiza tu biblioteca personal de videojuegos.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/styles.css">
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+        <div class="header__container">
+
+            <a href="../index.html" class="header__logo">
+
+                <img src="https://cdn.cloudflare.steamstatic.com/store/about/logo_steam.svg" alt="Steam">
+
+            </a>
+
+
+            <nav class="header__nav" aria-label="Navegacion principal">
+
+                <ul class="header__menu">
+
+                    <li>
+                        <a href="../index.html" class="header__link">Inicio</a>
+                    </li>
+
+                    <li>
+                        <a href="store.html" class="header__link">Tienda</a>
+                    </li>
+
+                    <li>
+                        <a href="library.html" class="header__link">Biblioteca</a>
+                    </li>
+
+                    <li>
+                        <a href="community.html" class="header__link">Comunidad</a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+
+            <div class="header__actions">
+
+                <a href="cart.html" class="header__cart">
+                    Carrito
+                </a>
+
+
+                <div class="header__account">
+
+                    <a href="login.html" class="header__account-link">
+                        Iniciar sesion
+                    </a>
+
+                    <a href="register.html" class="header__account-link">
+                        Registrarse
+                    </a>
+
+                </div>
+
+
+                <div class="header__profile" hidden>
+
+                    <span class="header__username">Usuario</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- MAIN -->
+
+    <main class="library">
+
+        <div class="library__container">
+
+
+            <!-- LIBRARY HEADER -->
+
+            <section class="library__header">
+
+                <div class="library__heading">
+
+                    <span class="library__eyebrow">
+                        TU COLECCION PERSONAL
+                    </span>
+
+                    <h1 class="library__title">
+                        Mi biblioteca
+                    </h1>
+
+                    <p class="library__description">
+                        Todos tus videojuegos en un solo lugar. Organiza tu coleccion
+                        y encuentra tu proxima aventura.
+                    </p>
+
+                </div>
+
+
+                <div class="library__statistics">
+
+                    <span class="library__statistics-number">
+                        12
+                    </span>
+
+                    <span class="library__statistics-label">
+                        Videojuegos en tu biblioteca
+                    </span>
+
+                </div>
+
+            </section>
+
+
+            <!-- LIBRARY CONTROLS -->
+
+            <section class="library__controls" aria-label="Controles de biblioteca">
+
+
+                <div class="library__search">
+
+                    <label for="library-search" class="library__search-label">
+                        Buscar videojuegos
+                    </label>
+
+                    <input
+                        type="search"
+                        id="library-search"
+                        class="library__search-input"
+                        placeholder="Buscar en mi biblioteca..."
+                        autocomplete="off"
+                        data-library-search>
+
+                </div>
+
+
+                <div class="library__filters">
+
+                    <div class="library__filter">
+
+                        <label for="library-category" class="library__filter-label">
+                            Categoria
+                        </label>
+
+                        <select
+                            id="library-category"
+                            class="library__select"
+                            data-library-filter="category">
+
+                            <option value="all">Todas las categorias</option>
+
+                            <option value="rpg">RPG</option>
+
+                            <option value="action">Accion</option>
+
+                            <option value="adventure">Aventura</option>
+
+                            <option value="simulation">Simulacion</option>
+
+                            <option value="indie">Indie</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="library__filter">
+
+                        <label for="library-sort" class="library__filter-label">
+                            Ordenar por
+                        </label>
+
+                        <select
+                            id="library-sort"
+                            class="library__select"
+                            data-library-sort>
+
+                            <option value="name">Nombre</option>
+
+                            <option value="recent">Agregados recientemente</option>
+
+                            <option value="hours">Horas jugadas</option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- LIBRARY CONTENT -->
+
+            <section class="library__content">
+
+                <div class="library__section-header">
+
+                    <h2 class="library__section-title">
+                        Todos los videojuegos
+                    </h2>
+
+                    <span class="library__count" data-library-count>
+                        6 videojuegos
+                    </span>
+
+                </div>
+
+
+                <div class="library__grid" data-library-container>
+
+
+                    <!-- GAME 1 -->
+
+                    <article
+                        class="library__game"
+                        data-game-id="1091500"
+                        data-category="rpg"
+                        data-game-name="Cyberpunk 2077"
+                        data-hours="15">
+
+                        <div class="library__game-image-container">
+
+                            <img
+                                src="https://cdn.cloudflare.steamstatic.com/steam/apps/1091500/header.jpg"
+                                alt="Cyberpunk 2077"
+                                class="library__game-image">
+
+                            <span class="library__game-status library__game-status--playing">
+                                En progreso
+                            </span>
+
+                        </div>
+
+
+                        <div class="library__game-content">
+
+                            <div class="library__game-information">
+
+                                <h3 class="library__game-title">
+                                    Cyberpunk 2077
+                                </h3>
+
+                                <span class="library__game-category">
+                                    RPG / Mundo abierto
+                                </span>
+
+                            </div>
+
+
+                            <div class="library__game-details">
+
+                                <span class="library__game-hours">
+                                    15 horas jugadas
+                                </span>
+
+                                <span class="library__game-date">
+                                    Agregado recientemente
+                                </span>
+
+                            </div>
+
+
+                            <div class="library__game-actions">
+
+                                <button
+                                    type="button"
+                                    class="button button--small library__game-button"
+                                    data-action="play-game"
+                                    data-game-id="1091500">
+
+                                    Jugar
+
+                                </button>
+
+                                <button
+                                    type="button"
+                                    class="library__game-more"
+                                    aria-label="Mas opciones para Cyberpunk 2077"
+                                    data-action="game-options"
+                                    data-game-id="1091500">
+
+                                    ...
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- GAME 2 -->
+
+                    <article
+                        class="library__game"
+                        data-game-id="1245620"
+                        data-category="rpg"
+                        data-game-name="Elden Ring"
+                        data-hours="8">
+
+                        <div class="library__game-image-container">
+
+                            <img
+                                src="https://cdn.cloudflare.steamstatic.com/steam/apps/1245620/header.jpg"
+                                alt="Elden Ring"
+                                class="library__game-image">
+
+                            <span class="library__game-status library__game-status--installed">
+                                Instalado
+                            </span>
+
+                        </div>
+
+
+                        <div class="library__game-content">
+
+                            <div class="library__game-information">
+
+                                <h3 class="library__game-title">
+                                    Elden Ring
+                                </h3>
+
+                                <span class="library__game-category">
+                                    RPG / Aventura
+                                </span>
+
+                            </div>
+
+
+                            <div class="library__game-details">
+
+                                <span class="library__game-hours">
+                                    8 horas jugadas
+                                </span>
+
+                                <span class="library__game-date">
+                                    En tu biblioteca
+                                </span>
+
+                            </div>
+
+
+                            <div class="library__game-actions">
+
+                                <button
+                                    type="button"
+                                    class="button button--small library__game-button"
+                                    data-action="play-game"
+                                    data-game-id="1245620">
+
+                                    Jugar
+
+                                </button>
+
+                                <button
+                                    type="button"
+                                    class="library__game-more"
+                                    aria-label="Mas opciones para Elden Ring"
+                                    data-action="game-options"
+                                    data-game-id="1245620">
+
+                                    ...
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- GAME 3 -->
+
+                    <article
+                        class="library__game"
+                        data-game-id="413150"
+                        data-category="simulation"
+                        data-game-name="Stardew Valley"
+                        data-hours="25">
+
+                        <div class="library__game-image-container">
+
+                            <img
+                                src="https://cdn.cloudflare.steamstatic.com/steam/apps/413150/header.jpg"
+                                alt="Stardew Valley"
+                                class="library__game-image">
+
+                            <span class="library__game-status library__game-status--installed">
+                                Instalado
+                            </span>
+
+                        </div>
+
+
+                        <div class="library__game-content">
+
+                            <div class="library__game-information">
+
+                                <h3 class="library__game-title">
+                                    Stardew Valley
+                                </h3>
+
+                                <span class="library__game-category">
+                                    Simulacion / Indie
+                                </span>
+
+                            </div>
+
+
+                            <div class="library__game-details">
+
+                                <span class="library__game-hours">
+                                    25 horas jugadas
+                                </span>
+
+                                <span class="library__game-date">
+                                    En tu biblioteca
+                                </span>
+
+                            </div>
+
+
+                            <div class="library__game-actions">
+
+                                <button
+                                    type="button"
+                                    class="button button--small library__game-button"
+                                    data-action="play-game"
+                                    data-game-id="413150">
+
+                                    Jugar
+
+                                </button>
+
+                                <button
+                                    type="button"
+                                    class="library__game-more"
+                                    aria-label="Mas opciones para Stardew Valley"
+                                    data-action="game-options"
+                                    data-game-id="413150">
+
+                                    ...
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- GAME 4 -->
+
+                    <article
+                        class="library__game"
+                        data-game-id="367520"
+                        data-category="indie"
+                        data-game-name="Hollow Knight"
+                        data-hours="12">
+
+                        <div class="library__game-image-container">
+
+                            <img
+                                src="https://cdn.cloudflare.steamstatic.com/steam/apps/367520/header.jpg"
+                                alt="Hollow Knight"
+                                class="library__game-image">
+
+                            <span class="library__game-status library__game-status--installed">
+                                Instalado
+                            </span>
+
+                        </div>
+
+
+                        <div class="library__game-content">
+
+                            <div class="library__game-information">
+
+                                <h3 class="library__game-title">
+                                    Hollow Knight
+                                </h3>
+
+                                <span class="library__game-category">
+                                    Indie / Aventura
+                                </span>
+
+                            </div>
+
+
+                            <div class="library__game-details">
+
+                                <span class="library__game-hours">
+                                    12 horas jugadas
+                                </span>
+
+                                <span class="library__game-date">
+                                    En tu biblioteca
+                                </span>
+
+                            </div>
+
+
+                            <div class="library__game-actions">
+
+                                <button
+                                    type="button"
+                                    class="button button--small library__game-button"
+                                    data-action="play-game"
+                                    data-game-id="367520">
+
+                                    Jugar
+
+                                </button>
+
+                                <button
+                                    type="button"
+                                    class="library__game-more"
+                                    aria-label="Mas opciones para Hollow Knight"
+                                    data-action="game-options"
+                                    data-game-id="367520">
+
+                                    ...
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- GAME 5 -->
+
+                    <article
+                        class="library__game"
+                        data-game-id="1145360"
+                        data-category="action"
+                        data-game-name="Hades"
+                        data-hours="6">
+
+                        <div class="library__game-image-container">
+
+                            <img
+                                src="https://cdn.cloudflare.steamstatic.com/steam/apps/1145360/header.jpg"
+                                alt="Hades"
+                                class="library__game-image">
+
+                            <span class="library__game-status library__game-status--installed">
+                                Instalado
+                            </span>
+
+                        </div>
+
+
+                        <div class="library__game-content">
+
+                            <div class="library__game-information">
+
+                                <h3 class="library__game-title">
+                                    Hades
+                                </h3>
+
+                                <span class="library__game-category">
+                                    Accion / Roguelike
+                                </span>
+
+                            </div>
+
+
+                            <div class="library__game-details">
+
+                                <span class="library__game-hours">
+                                    6 horas jugadas
+                                </span>
+
+                                <span class="library__game-date">
+                                    En tu biblioteca
+                                </span>
+
+                            </div>
+
+
+                            <div class="library__game-actions">
+
+                                <button
+                                    type="button"
+                                    class="button button--small library__game-button"
+                                    data-action="play-game"
+                                    data-game-id="1145360">
+
+                                    Jugar
+
+                                </button>
+
+                                <button
+                                    type="button"
+                                    class="library__game-more"
+                                    aria-label="Mas opciones para Hades"
+                                    data-action="game-options"
+                                    data-game-id="1145360">
+
+                                    ...
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- GAME 6 -->
+
+                    <article
+                        class="library__game"
+                        data-game-id="1174180"
+                        data-category="adventure"
+                        data-game-name="Red Dead Redemption 2"
+                        data-hours="32">
+
+                        <div class="library__game-image-container">
+
+                            <img
+                                src="https://cdn.cloudflare.steamstatic.com/steam/apps/1174180/header.jpg"
+                                alt="Red Dead Redemption 2"
+                                class="library__game-image">
+
+                            <span class="library__game-status library__game-status--playing">
+                                En progreso
+                            </span>
+
+                        </div>
+
+
+                        <div class="library__game-content">
+
+                            <div class="library__game-information">
+
+                                <h3 class="library__game-title">
+                                    Red Dead Redemption 2
+                                </h3>
+
+                                <span class="library__game-category">
+                                    Aventura / Accion
+                                </span>
+
+                            </div>
+
+
+                            <div class="library__game-details">
+
+                                <span class="library__game-hours">
+                                    32 horas jugadas
+                                </span>
+
+                                <span class="library__game-date">
+                                    En tu biblioteca
+                                </span>
+
+                            </div>
+
+
+                            <div class="library__game-actions">
+
+                                <button
+                                    type="button"
+                                    class="button button--small library__game-button"
+                                    data-action="play-game"
+                                    data-game-id="1174180">
+
+                                    Jugar
+
+                                </button>
+
+                                <button
+                                    type="button"
+                                    class="library__game-more"
+                                    aria-label="Mas opciones para Red Dead Redemption 2"
+                                    data-action="game-options"
+                                    data-game-id="1174180">
+
+                                    ...
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+
+                <!-- EMPTY LIBRARY -->
+
+                <div class="library__empty" hidden data-library-empty>
+
+                    <div class="library__empty-icon">
+                        +
+                    </div>
+
+                    <h3 class="library__empty-title">
+                        Tu biblioteca esta vacia
+                    </h3>
+
+                    <p class="library__empty-description">
+                        Todavia no tienes videojuegos en tu coleccion.
+                        Explora nuestra tienda y encuentra tu proxima aventura.
+                    </p>
+
+                    <a href="store.html" class="button">
+                        Explorar tienda
+                    </a>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <div class="footer__container">
+
+            <div class="footer__info">
+
+                <a href="../index.html" class="footer__logo">
+                    STEAM
+                </a>
+
+                <p class="footer__description">
+                    Tu destino para descubrir, comprar y disfrutar videojuegos.
+                </p>
+
+            </div>
+
+
+            <nav class="footer__nav" aria-label="Navegacion del pie de pagina">
+
+                <a href="../index.html" class="footer__link">Inicio</a>
+
+                <a href="store.html" class="footer__link">Tienda</a>
+
+                <a href="profile.html" class="footer__link">Mi perfil</a>
+
+                <a href="community.html" class="footer__link">Comunidad</a>
+
+                <a href="contact.html" class="footer__link">Contacto</a>
+
+            </nav>
+
+        </div>
+
+
+        <div class="footer__copyright">
+
+            <p>&copy; 2026 Steam. Todos los derechos reservados.</p>
+
+        </div>
+
+    </footer>
+
+    <!-- JavaScript: buscar, filtrar, ordenar y gestionar videojuegos. -->
+
+</body>
+</html>
+

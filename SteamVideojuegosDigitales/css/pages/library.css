@@ -1,0 +1,388 @@
+/*===== LIBRARY =====*/
+
+.library {
+    min-height: 70vh;
+    padding: var(--spacing-xxl) var(--spacing-large);
+}
+
+.library__container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+}
+
+
+/*===== LIBRARY HEADER =====*/
+
+.library__header {
+    margin-bottom: var(--spacing-xxl);
+    padding: var(--spacing-xl);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--spacing-large);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-large);
+    background:
+        linear-gradient(
+            120deg,
+            var(--color-background-card),
+            var(--color-primary-light)
+        );
+}
+
+.library__eyebrow {
+    color: var(--color-secondary);
+    font-size: var(--font-size-small);
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.library__title {
+    margin: var(--spacing-small) 0;
+    color: var(--color-text-white);
+    font-size: var(--font-size-xxl);
+}
+
+.library__description {
+    max-width: 600px;
+    color: var(--color-text-light);
+    font-size: var(--font-size-base);
+    line-height: 1.6;
+}
+
+.library__statistics {
+    min-width: 170px;
+    padding: var(--spacing-large);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-small);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-medium);
+    background-color: rgba(16, 21, 28, 0.5);
+}
+
+.library__statistics-number {
+    color: var(--color-secondary);
+    font-size: var(--font-size-xxl);
+    font-weight: 700;
+}
+
+.library__statistics-label {
+    color: var(--color-text-light);
+    font-size: var(--font-size-small);
+    text-align: center;
+}
+
+
+/*===== CONTROLS =====*/
+
+.library__controls {
+    margin-bottom: var(--spacing-xl);
+    padding: var(--spacing-large);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: var(--spacing-large);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-medium);
+    background-color: var(--color-background-card);
+}
+
+.library__search {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-small);
+}
+
+.library__search-label,
+.library__filter-label {
+    color: var(--color-text);
+    font-size: var(--font-size-small);
+    font-weight: 700;
+}
+
+.library__search-input,
+.library__select {
+    width: 100%;
+    min-height: 44px;
+    padding: var(--spacing-small) var(--spacing-medium);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-small);
+    background-color: var(--color-primary-dark);
+    color: var(--color-text-white);
+    font-family: var(--font-family);
+    font-size: var(--font-size-small);
+    transition: border-color var(--transition-fast);
+}
+
+.library__search-input:focus,
+.library__select:focus {
+    border-color: var(--color-secondary);
+    outline: none;
+}
+
+.library__filters {
+    display: flex;
+    gap: var(--spacing-medium);
+}
+
+.library__filter {
+    min-width: 180px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-small);
+}
+
+
+/*===== LIBRARY CONTENT =====*/
+
+.library__content {
+    margin-bottom: var(--spacing-xxl);
+}
+
+.library__section-header {
+    margin-bottom: var(--spacing-large);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--spacing-medium);
+}
+
+.library__section-title {
+    color: var(--color-text-white);
+    font-size: var(--font-size-large);
+}
+
+.library__count {
+    color: var(--color-text-light);
+    font-size: var(--font-size-small);
+}
+
+
+/*===== GAME GRID =====*/
+
+.library__grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--spacing-large);
+}
+
+.library__game {
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-medium);
+    background-color: var(--color-background-card);
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.library__game:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-medium);
+}
+
+.library__game-image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.library__game-image {
+    width: 100%;
+    aspect-ratio: 460 / 215;
+    display: block;
+    object-fit: cover;
+}
+
+.library__game-status {
+    position: absolute;
+    top: var(--spacing-small);
+    left: var(--spacing-small);
+    padding: var(--spacing-xs) var(--spacing-small);
+    border-radius: var(--border-radius-small);
+    color: var(--color-text-white);
+    font-size: var(--font-size-small);
+    font-weight: 700;
+}
+
+.library__game-status--installed {
+    background-color: rgba(26, 159, 255, 0.9);
+}
+
+.library__game-status--playing {
+    background-color: rgba(164, 208, 7, 0.9);
+    color: var(--color-text-dark);
+}
+
+
+/*===== GAME INFORMATION =====*/
+
+.library__game-content {
+    padding: var(--spacing-medium);
+}
+
+.library__game-information {
+    min-height: 65px;
+}
+
+.library__game-title {
+    margin-bottom: var(--spacing-small);
+    color: var(--color-text-white);
+    font-size: var(--font-size-medium);
+}
+
+.library__game-category {
+    color: var(--color-secondary);
+    font-size: var(--font-size-small);
+}
+
+.library__game-details {
+    margin-top: var(--spacing-medium);
+    padding-top: var(--spacing-medium);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-small);
+    border-top: 1px solid var(--border-color);
+}
+
+.library__game-hours,
+.library__game-date {
+    color: var(--color-text-light);
+    font-size: var(--font-size-small);
+}
+
+
+/*===== GAME ACTIONS =====*/
+
+.library__game-actions {
+    margin-top: var(--spacing-large);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--spacing-small);
+}
+
+.library__game-button {
+    flex: 1;
+}
+
+.library__game-more {
+    width: 38px;
+    height: 32px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-small);
+    background-color: var(--color-primary-dark);
+    color: var(--color-text-white);
+    font-size: var(--font-size-large);
+    cursor: pointer;
+    transition: background-color var(--transition-fast);
+}
+
+.library__game-more:hover {
+    background-color: var(--color-background-hover);
+}
+
+
+/*===== EMPTY LIBRARY =====*/
+
+.library__empty {
+    padding: var(--spacing-xxl);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-medium);
+    border: 1px dashed var(--border-color);
+    border-radius: var(--border-radius-large);
+    background-color: var(--color-background-card);
+    text-align: center;
+}
+
+.library__empty-icon {
+    width: 65px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--border-radius-round);
+    background-color: var(--color-primary-light);
+    color: var(--color-secondary);
+    font-size: var(--font-size-xxl);
+}
+
+.library__empty-title {
+    color: var(--color-text-white);
+    font-size: var(--font-size-large);
+}
+
+.library__empty-description {
+    max-width: 450px;
+    color: var(--color-text-light);
+    font-size: var(--font-size-base);
+    line-height: 1.6;
+}
+
+
+/*===== RESPONSIVE =====*/
+
+@media (max-width: 1000px) {
+
+    .library__grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .library__controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .library__filters {
+        width: 100%;
+    }
+
+    .library__filter {
+        flex: 1;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .library {
+        padding: var(--spacing-large) var(--spacing-medium);
+    }
+
+    .library__header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .library__title {
+        font-size: var(--font-size-xl);
+    }
+
+    .library__statistics {
+        width: 100%;
+    }
+
+    .library__filters {
+        flex-direction: column;
+    }
+
+    .library__filter {
+        width: 100%;
+    }
+
+    .library__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .library__section-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .library__empty {
+        padding: var(--spacing-large);
+    }
+
+}
