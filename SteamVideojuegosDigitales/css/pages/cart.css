@@ -1,0 +1,95 @@
+/*===== CART PAGE =====*/
+.cart {
+    width: 100%;
+    min-height: 60vh;
+    padding: var(--spacing-xl) 0 var(--spacing-xxl);
+}
+
+.cart__container {
+    width: 90%;
+    max-width: var(--container-width);
+    margin: 0 auto;
+}
+
+.cart__breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-small);
+    margin-bottom: var(--spacing-xl);
+    color: var(--color-text-light);
+    font-size: var(--font-size-small);
+}
+
+.cart__breadcrumb a:hover {
+    color: var(--color-secondary);
+}
+
+.cart__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: var(--spacing-large);
+    margin-bottom: var(--spacing-xl);
+}
+
+.cart__eyebrow {
+    margin-bottom: var(--spacing-xs);
+    color: var(--color-secondary);
+    font-size: var(--font-size-small);
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.cart__title {
+    color: var(--color-text-white);
+    font-size: var(--font-size-xxl);
+}
+
+.cart__subtitle {
+    margin-top: var(--spacing-small);
+    color: var(--color-text-light);
+}
+
+.cart__layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 340px;
+    align-items: start;
+    gap: var(--spacing-xl);
+}
+
+.cart__products,
+.cart-summary {
+    min-width: 0;
+    padding: var(--spacing-large);
+    background-color: var(--color-primary-light);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-medium);
+}
+
+.cart__section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--spacing-medium);
+    margin-bottom: var(--spacing-medium);
+}
+
+.cart__section-title,
+.cart-summary__title {
+    color: var(--color-text-white);
+    font-size: var(--font-size-large);
+}
+
+.cart__item-count {
+    color: var(--color-text-light);
+    font-size: var(--font-size-small);
+}
+
+.cart-item {
+    display: grid;
+    grid-template-columns: 150px minmax(150px, 1fr) auto auto;
+    align-items: center;
+    gap: var(--spacing-medium);
+    padding: var(--spacing-medium) 0;
+    border-top: 1px solid var(--border-color);
+}
