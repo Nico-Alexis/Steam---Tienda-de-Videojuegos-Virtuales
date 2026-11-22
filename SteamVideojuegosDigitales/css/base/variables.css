@@ -1,0 +1,75 @@
+/*===== VARIABLES GLOBALES =====*/
+:root {
+    /*===== COLORES PRINCIPALES =====*/
+    --color-primary: #171a21;
+    --color-primary-light: #1b2838;
+    --color-primary-dark: #10151c;
+    --color-secondary: #66c0f4;
+    --color-secondary-light: #8bd5ff;
+    --color-accent: #1a9fff;
+
+    /*===== COLORES DE FONDO =====*/
+    --color-background: #0e141b;
+    --color-background-light: #171e27;
+    --color-background-card: #1b2838;
+    --color-background-hover: #25394f;
+
+    /*===== COLORES DE TEXTO =====*/
+    --color-text: #c7d5e0;
+    --color-text-light: #8f98a0;
+    --color-text-white: #ffffff;
+    --color-text-dark: #171a21;
+
+    /*===== COLORES DE ESTADO =====*/
+    --color-success: #a4d007;
+    --color-danger: #e74c3c;
+    --color-warning: #f1c40f;
+    --color-info: #66c0f4;
+
+    /*===== COLORES DE BOTONES =====*/
+    --color-button-primary: #1a9fff;
+    --color-button-primary-hover: #45b5ff;
+    --color-button-secondary: #324b61;
+    --color-button-secondary-hover: #456783;
+
+    /*===== TIPOGRAFIA =====*/
+    --font-family: "Roboto", Arial, sans-serif;
+    --font-size-small: 0.75rem;
+    --font-size-base: 1rem;
+    --font-size-medium: 1.125rem;
+    --font-size-large: 1.5rem;
+    --font-size-xl: 2rem;
+    --font-size-xxl: 3rem;
+
+    /*===== ESPACIADOS =====*/
+    --spacing-xs: 4px;
+    --spacing-small: 8px;
+    --spacing-medium: 16px;
+    --spacing-large: 24px;
+    --spacing-xl: 32px;
+    --spacing-xxl: 48px;
+
+    /*===== BORDES =====*/
+    --border-radius-small: 4px;
+    --border-radius-medium: 8px;
+    --border-radius-large: 12px;
+    --border-radius-round: 50%;
+
+    --border-color: #2a475e;
+
+    /*===== SOMBRAS =====*/
+    --shadow-small: 0 2px 4px rgba(0, 0, 0, 0.2);
+    --shadow-medium: 0 4px 10px rgba(0, 0, 0, 0.3);
+    --shadow-large: 0 8px 24px rgba(0, 0, 0, 0.4);
+
+    /*===== TRANSICIONES =====*/
+    --transition-fast: 0.2s ease;
+    --transition-medium: 0.3s ease;
+    --transition-slow: 0.5s ease;
+
+    /*===== DIMENSIONES =====*/
+    --container-width: 1200px;
+    --header-height: 80px;
+}
+
+
